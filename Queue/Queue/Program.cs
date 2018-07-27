@@ -10,6 +10,16 @@ namespace Queue
     {
         static void Main(string[] args)
         {
+            Queue<int> queue = new Queue<int>();
+            for (int i = 0; i < 10; i++)
+            {
+                queue.Enqueue(i);
+            }
+
+            for (int i = 0; i < 9; i++)
+            {
+                queue.Dequeue();
+            }
         }
     }
 }
